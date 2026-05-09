@@ -2,7 +2,7 @@ name: Playwright Tests
 
 on:
   schedule:
-    # Run daily at 9:00, 13:00, 17:00 UTC (adjust times as needed)
+    # Run daily at 9:00,2:10, 13:00, 17:00 UTC (adjust times as needed)
     - cron: '0 9,13,17 * * *'
   workflow_dispatch: # Allow manual trigger
 
