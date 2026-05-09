@@ -32,6 +32,14 @@ npm run show-results
 
 This command opens the built-in Playwright HTML report in your default browser.
 
+## CI/CD
+
+The repository includes GitHub Actions workflow that runs the Playwright tests daily at 9:00, 13:00, and 17:00 UTC. The workflow also allows manual triggering.
+
+- Workflow file: `.github/workflows/playwright-tests.yml`
+- Test results are uploaded as artifacts for 30 days
+- Runs on Ubuntu with Node.js LTS and Playwright browsers
+
 ## Notes
 
 - The framework uses Page Object Model for maintainability.
