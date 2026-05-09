@@ -10,6 +10,7 @@ export default defineConfig({
   reporter: [
     ['list'],
     ['dot'],
+    ['html'],
     ['./reporters/extentReporter.ts']
   ],
   use: {

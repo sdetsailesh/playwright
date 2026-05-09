@@ -2,10 +2,11 @@
   "name": "demoqa-playwright-framework",
   "version": "1.0.0",
   "private": true,
-  "description": "Playwright automation framework for DemoQA using Page Object Model and custom Extent-style HTML report.",
+  "description": "Playwright automation framework for DemoQA using Page Object Model and built-in Playwright HTML report.",
   "scripts": {
     "test": "npx playwright test",
     "report": "npx playwright show-report",
+    "show-results": "npx playwright show-report",
     "clean": "rm -rf test-results extent-report",
     "build": "npx tsc --noEmit"
   },

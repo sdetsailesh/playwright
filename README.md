@@ -1,13 +1,13 @@
 # DemoQA Playwright Automation Framework
 
-This repository contains a Playwright automation framework for https://demoqa.com using the Page Object Model pattern and a custom Extent-style HTML report.
+This repository contains a Playwright automation framework for https://demoqa.com using the Page Object Model pattern and the built-in Playwright HTML report.
 
 ## Structure
 
 - `pages/` - Page object classes for DemoQA pages
 - `tests/` - End-to-end test scenarios
 - `reporters/` - Custom reporter for generating `extent-report/ExtentReport.html`
-- `playwright.config.ts` - Playwright test runner configuration
+- `playwright.config.ts` - Playwright test runner configuration with built-in HTML reporting
 
 ## Install
 
@@ -24,11 +24,13 @@ npm test
 
 ## View report
 
-After the tests complete, open the generated report:
+After the tests complete, open the generated Playwright HTML report:
 
 ```bash
-open extent-report/ExtentReport.html
+npm run show-results
 ```
+
+This command opens the built-in Playwright HTML report in your default browser.
 
 ## Notes
 
